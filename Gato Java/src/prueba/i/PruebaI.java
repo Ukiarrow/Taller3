@@ -296,15 +296,10 @@ String Ganador2=("Ganador Jugador N° 2");
             System.out.println("btn 9 " + jButton9.getText());
             if (playing == 2) {
                 //**********************************************************************
-                if (jButton1.getText().equals(jButton2.getText()))
-                    if(jButton2.getText().equals(jButton3.getText()))
-                        if(jButton1.getText().equals(jButton3.getText()))
-                            if( !"".equals(jButton1.getText()))
-                                if( !"".equals(jButton2.getText()))
-                                    if(!"".equals(jButton3.getText())) {
-                                        Mensaje.setText(Ganador1);
-                                        isPlay = false;
-                                    }
+                if (jButton1.getText().equals(jButton2.getText()) && jButton2.getText().equals(jButton3.getText()) && jButton1.getText().equals(jButton3.getText()) && !"".equals(jButton1.getText()) && !"".equals(jButton2.getText()) && !"".equals(jButton3.getText())) {
+                    Mensaje.setText(Ganador1);
+                    isPlay = false;
+                }
                 if (jButton1.getText().equals(jButton4.getText()) && jButton4.getText().equals(jButton7.getText()) && jButton1.getText().equals(jButton7.getText()) && !"".equals(jButton1.getText()) && !"".equals(jButton4.getText()) && !"".equals(jButton7.getText())) {
                     Mensaje.setText(Ganador1);
                     isPlay = false;
